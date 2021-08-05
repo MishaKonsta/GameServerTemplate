@@ -14,7 +14,7 @@ $server_info = json_decode($json, true);
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="<?php echo $config['home_title']; ?> Gaming server website. You can view current players & Statistic, or connect our server " />
         <title><?php echo $config['home_title']; ?></title>
-        <link href="css/styles.css?style" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
