@@ -16,7 +16,7 @@ $server_info = json_decode($json, true);
 		
 		
         <title><?php echo $config['home_title']; ?></title>
-        <link href="css/styles.css?style" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
