@@ -5,16 +5,18 @@ $server_info = json_decode($json, true);
 ?>
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="<?php echo $config['home_title']; ?> Gaming server website. You can view current players & Statistic, or connect our server " />
+        <meta name="description" content="<?php echo $config['home_title']; ?> - <?php echo $server_info['gamename']; ?> Server. You can view current players & Statistic, or connect our server " />
+		<link rel="shortcut icon" href="https://play-servers.com/images/games/webp/icons/<?php echo $server_info['game']; ?>.webp" type="image/x-icon" />
+		
+		
+		
         <title><?php echo $config['home_title']; ?></title>
-        <link href="styles.css" rel="stylesheet" />
+        <link href="css/styles.css?style" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -35,7 +37,7 @@ $server_info = json_decode($json, true);
                     </div>
                 </div>
             </nav>
-            <header class="bg-dark py-5" style="background:url(https://play-servers.com/images/games/bg/<?php echo $server_info['game']; ?>.jpg) no-repeat center top; background-size: 100%;">
+            <header class="bg-dark py-5" style="background:url(https://play-servers.com/images/games/webp/bg/<?php echo $server_info['game']; ?>.webp) no-repeat center top; background-size: 100%;">
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
@@ -47,7 +49,7 @@ $server_info = json_decode($json, true);
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="https://play-servers.com/images/games/icons/<?php echo $server_info['game']; ?>.png" alt="<?php echo $server_info['game']; ?> server" /></div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="https://play-servers.com/images/games/webp/icons/<?php echo $server_info['game']; ?>.webp" alt="<?php echo $server_info['gamename']; ?> server" /></div>
                     </div>
                 </div>
             </header>
@@ -58,7 +60,7 @@ $server_info = json_decode($json, true);
 					<div class="col-lg-8">
 						<!-- Featured blog post-->
 						<div class="card mb-4" id="about">
-						<a href="#!"><img class="card-img-top" src="https://play-servers.com/images/games/smallbg/<?php echo $server_info['game']; ?>.jpg" alt="..." /></a>
+						<a href="#!"><img class="card-img-top" src="https://play-servers.com/images/games/webp/smallbg/<?php echo $server_info['game']; ?>.webp" alt="..." /></a>
 							<div class="card-body">
 								<h2 class="card-title">Welcome to <?php echo $config['home_logo_name']; ?></h2>
 								<p class="card-text"><?php echo $config['home_about_server_description']; ?></p>
@@ -91,7 +93,7 @@ $server_info = json_decode($json, true);
                         <div class="card-body">
                             <div class="input-group">
                                 <input class="form-control" name="nickname" type="text" placeholder="Enter your nickname on server..." aria-label="Enter your nickname on server..." aria-describedby="button-search" />
-                                <a class="btn btn-primary" name="votifer" id="button-search" type="button" href="https://play-servers.com/server-<?php echo $config['server_id']; ?>#vote">Vote for us!</a>
+                                <a class="btn btn-primary" name="votifer" id="button-search" type="button" href="https://play-servers.com/server-<?php echo $config['server_id']; ?>#vote" target=_blank>Vote for us!</a>
                             </div>
                         </div>
                     </div>
@@ -138,9 +140,7 @@ $server_info = json_decode($json, true);
                 </div>
             </div>
         </footer>
-        <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
 </html>
