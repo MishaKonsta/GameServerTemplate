@@ -4257,8 +4257,8 @@ textarea.form-control-lg {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border: 1px solid #c5c5c5;
+  border-radius: 10px;
 }
 .card > hr {
   margin-right: 0;
@@ -4309,13 +4309,13 @@ textarea.form-control-lg {
 }
 
 .card-header {
-  padding: 0.5rem 1rem;
-  margin-bottom: 0;
-  background-color: rgb(20 45 70 / 29%);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    background-color: rgb(252 182 71 / 73%);
+    border-bottom: 1px solid rgb(0 0 0 / 13%);
 }
 .card-header:first-child {
-  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+    border-radius: 5px 5px 0 0;
 }
 
 .card-footer {
