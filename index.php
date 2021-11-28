@@ -89,12 +89,14 @@ $server_info = json_decode($json, true);
 				
                 <div class="col-lg-4">
                     <div class="card mb-4">
-                        <div class="card-header">Vote for server</div>
+                        <div class="card-header">Vote for us</div>
                         <div class="card-body">
+                         <form action='https://play-servers.com/server-<?php echo $config['server_id']; ?>' method='POST' target="_blank">
                             <div class="input-group">
-                                <input class="form-control" name="nickname" type="text" placeholder="Enter your nickname on server..." aria-label="Enter your nickname on server..." aria-describedby="button-search" />
-                                <a class="btn btn-primary" name="votifer" id="button-search" type="button" href="https://play-servers.com/server-<?php echo $config['server_id']; ?>#vote" target=_blank>Vote for us!</a>
+                                <input class="form-control" name="nickname" type="text" placeholder="Your nickname on server.." />
+                               <button class="btn btn-primary" name="votifer" type='submit' value='Vote'>Vote!</button>
                             </div>
+			</form>
                         </div>
                     </div>
                     <div class="card mb-4">
