@@ -93,7 +93,7 @@ $server_info = json_decode($json, true);
                         <div class="card-body">
                          <form action='https://play-servers.com/server-<?php echo $config['server_id']; ?>' method='POST' target="_blank">
                             <div class="input-group">
-                                <input class="form-control" name="nickname" type="text" placeholder="Your nickname on server.." />
+                                <input class="form-control" name="nickname" type="text" placeholder="Your nickname on server.." required />
                                <button class="btn btn-primary" name="votifer" type='submit' value='Vote'>Vote!</button>
                             </div>
 			</form>
